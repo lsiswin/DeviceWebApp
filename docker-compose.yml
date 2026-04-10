@@ -1,0 +1,41 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: device-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+  device-api:
+    build:
+      context: ./DeviceApi
+      dockerfile: Dockerfile
+    container_name: device-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__SqlServer=Server=sqlserver,1433;Database=DeviceWebAppDb;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False;TrustServerCertificate=True
+      - Jwt__Issuer=DeviceWebApp.Docker
+      - Jwt__Audience=DeviceWebApp.Admin.Docker
+      - Jwt__Key=DeviceWebApp-Docker-Strong-Jwt-Key-2026
+      - Jwt__ExpireMinutes=120
+    ports:
+      - "5288:8080"
+    depends_on:
+      - sqlserver
+
+  admin-web:
+    build:
+      context: ./admin-web
+      dockerfile: Dockerfile
+    container_name: admin-web
+    ports:
+      - "5173:80"
+    depends_on:
+      - device-api
+
+volumes:
+  sqlserver_data:

@@ -1,0 +1,172 @@
+2026-04-09 22:41:53.839 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-04-09 22:41:53.993 +08:00 [INF] HTTP GET / responded 404 in 158.0799 ms
+2026-04-09 22:42:05.929 +08:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 7.1491 ms
+2026-04-09 22:42:06.368 +08:00 [INF] 操作日志记录: Login User 87e4ba21-f4ff-4a1d-8484-f568a78b7716
+2026-04-09 22:42:06.371 +08:00 [INF] 用户登录成功: admin
+2026-04-09 22:42:06.444 +08:00 [INF] HTTP POST /api/auth/login responded 200 in 504.4639 ms
+2026-04-09 22:42:06.472 +08:00 [INF] HTTP OPTIONS /api/admin/dashboard/stats responded 204 in 0.2419 ms
+2026-04-09 22:42:06.738 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 254.9981 ms
+2026-04-09 22:42:07.684 +08:00 [INF] HTTP OPTIONS /api/admin/devices responded 204 in 0.8127 ms
+2026-04-09 22:42:07.853 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 159.8128 ms
+2026-04-09 22:42:08.131 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 4.4868 ms
+2026-04-09 22:42:08.137 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.1345 ms
+2026-04-09 22:42:08.138 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.0701 ms
+2026-04-09 22:42:08.169 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 27.5188 ms
+2026-04-09 22:42:08.176 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 5.8559 ms
+2026-04-09 22:42:08.789 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 2.4773 ms
+2026-04-09 22:42:11.496 +08:00 [INF] HTTP OPTIONS /api/admin/dashboard/stats responded 204 in 0.2179 ms
+2026-04-09 22:42:11.503 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 1.0948 ms
+2026-04-09 22:42:11.979 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.2780 ms
+2026-04-09 22:42:11.994 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 9.0772 ms
+2026-04-09 22:42:12.006 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 10.6252 ms
+2026-04-09 22:42:13.055 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 1.3458 ms
+2026-04-09 22:42:13.923 +08:00 [INF] HTTP OPTIONS /api/admin/permissions/me responded 204 in 0.1982 ms
+2026-04-09 22:42:13.946 +08:00 [INF] 操作日志记录: ReadPermissions User 87e4ba21-f4ff-4a1d-8484-f568a78b7716
+2026-04-09 22:42:13.950 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 22.3385 ms
+2026-04-09 22:42:14.611 +08:00 [INF] HTTP OPTIONS /api/admin/operation-logs responded 204 in 0.1546 ms
+2026-04-09 22:42:14.645 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 200 in 28.2809 ms
+2026-04-09 22:42:17.888 +08:00 [INF] HTTP OPTIONS /api/admin/devices responded 204 in 0.0952 ms
+2026-04-09 22:42:17.895 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.4851 ms
+2026-04-09 22:42:26.139 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063 responded 204 in 0.1283 ms
+2026-04-09 22:42:26.205 +08:00 [INF] 操作日志记录: UpdateDevice Device d8b4a1a4-a1f3-4e5f-b825-7411cd46a063
+2026-04-09 22:42:26.208 +08:00 [INF] 设备已更新: "d8b4a1a4-a1f3-4e5f-b825-7411cd46a063"
+2026-04-09 22:42:26.211 +08:00 [INF] HTTP PUT /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063 responded 200 in 65.8838 ms
+2026-04-09 22:42:26.217 +08:00 [INF] HTTP OPTIONS /api/admin/devices responded 204 in 0.1705 ms
+2026-04-09 22:42:26.229 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 6.4112 ms
+2026-04-09 22:42:27.590 +08:00 [INF] HTTP OPTIONS /api/admin/operation-logs responded 204 in 0.2152 ms
+2026-04-09 22:42:27.609 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 200 in 10.2305 ms
+2026-04-09 22:42:29.027 +08:00 [INF] HTTP OPTIONS /api/admin/dashboard/stats responded 204 in 0.1578 ms
+2026-04-09 22:42:29.041 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 7.4139 ms
+2026-04-09 22:42:29.605 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.6009 ms
+2026-04-09 22:42:30.258 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.2745 ms
+2026-04-09 22:42:30.266 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.0926 ms
+2026-04-09 22:42:30.266 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.1103 ms
+2026-04-09 22:42:30.281 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 8.5108 ms
+2026-04-09 22:42:30.287 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 5.4862 ms
+2026-04-09 22:42:40.565 +08:00 [INF] HTTP OPTIONS /api/admin/devices/9c0e5025-172b-490d-8ec1-85adc405a8e4/datapoints responded 204 in 0.1195 ms
+2026-04-09 22:42:40.576 +08:00 [INF] HTTP GET /api/admin/devices/9c0e5025-172b-490d-8ec1-85adc405a8e4/datapoints responded 200 in 6.2652 ms
+2026-04-09 22:42:42.281 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.0857 ms
+2026-04-09 22:42:42.295 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 6.9934 ms
+2026-04-09 22:42:44.111 +08:00 [INF] HTTP GET /api/admin/devices/9c0e5025-172b-490d-8ec1-85adc405a8e4/datapoints responded 200 in 30.5017 ms
+2026-04-09 22:42:44.914 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 7.9557 ms
+2026-04-09 22:42:48.853 +08:00 [INF] HTTP OPTIONS /api/admin/permissions/me responded 204 in 0.1034 ms
+2026-04-09 22:42:48.899 +08:00 [INF] 操作日志记录: ReadPermissions User 87e4ba21-f4ff-4a1d-8484-f568a78b7716
+2026-04-09 22:42:48.901 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 40.1972 ms
+2026-04-09 22:42:58.370 +08:00 [INF] HTTP OPTIONS /api/admin/operation-logs responded 204 in 0.1204 ms
+2026-04-09 22:42:58.384 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 200 in 6.2759 ms
+2026-04-09 22:42:59.185 +08:00 [INF] HTTP OPTIONS /api/admin/permissions/me responded 204 in 0.1185 ms
+2026-04-09 22:42:59.205 +08:00 [INF] 操作日志记录: ReadPermissions User 87e4ba21-f4ff-4a1d-8484-f568a78b7716
+2026-04-09 22:42:59.209 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 17.6834 ms
+2026-04-09 22:42:59.799 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 200 in 7.1128 ms
+2026-04-09 22:43:01.370 +08:00 [INF] HTTP OPTIONS /api/admin/devices responded 204 in 0.1133 ms
+2026-04-09 22:43:01.382 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.7117 ms
+2026-04-09 22:43:02.191 +08:00 [INF] HTTP OPTIONS /api/admin/dashboard/stats responded 204 in 0.1774 ms
+2026-04-09 22:43:02.199 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 1.3210 ms
+2026-04-09 22:43:05.660 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.8699 ms
+2026-04-09 22:43:06.044 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 2.5040 ms
+2026-04-09 22:43:06.053 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.2023 ms
+2026-04-09 22:43:06.054 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.2574 ms
+2026-04-09 22:43:06.077 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 14.8994 ms
+2026-04-09 22:43:06.088 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 9.1473 ms
+2026-04-09 22:43:07.101 +08:00 [INF] HTTP OPTIONS /api/admin/permissions/me responded 204 in 0.1351 ms
+2026-04-09 22:43:07.181 +08:00 [INF] 操作日志记录: ReadPermissions User 87e4ba21-f4ff-4a1d-8484-f568a78b7716
+2026-04-09 22:43:07.183 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 68.1560 ms
+2026-04-09 22:43:18.136 +08:00 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.1368 ms
+2026-04-09 22:43:18.154 +08:00 [INF] HTTP POST /api/auth/register responded 400 in 13.3995 ms
+2026-04-09 22:43:27.747 +08:00 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.0891 ms
+2026-04-09 22:43:27.753 +08:00 [INF] HTTP POST /api/auth/register responded 400 in 2.1905 ms
+2026-04-09 22:43:37.923 +08:00 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.1023 ms
+2026-04-09 22:43:37.932 +08:00 [INF] HTTP POST /api/auth/register responded 400 in 1.2567 ms
+2026-04-09 22:43:42.576 +08:00 [INF] HTTP POST /api/auth/register responded 400 in 1.4105 ms
+2026-04-09 22:44:02.560 +08:00 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.1059 ms
+2026-04-09 22:44:02.680 +08:00 [INF] 操作日志记录: RegisterUser User c2bcf90d-454d-4c47-a6c4-bbaf97ffdc15
+2026-04-09 22:44:02.684 +08:00 [INF] 用户注册成功: cold
+2026-04-09 22:44:02.689 +08:00 [INF] HTTP POST /api/auth/register responded 200 in 124.4365 ms
+2026-04-09 22:44:13.672 +08:00 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.0952 ms
+2026-04-09 22:44:13.679 +08:00 [INF] HTTP POST /api/auth/register responded 400 in 1.5361 ms
+2026-04-09 22:44:19.331 +08:00 [INF] HTTP OPTIONS /api/auth/register responded 204 in 0.0800 ms
+2026-04-09 22:44:19.500 +08:00 [INF] 操作日志记录: RegisterUser User 041b2069-58b5-4df4-85f0-4063af88fc20
+2026-04-09 22:44:19.503 +08:00 [INF] 用户注册成功: dream
+2026-04-09 22:44:19.505 +08:00 [INF] HTTP POST /api/auth/register responded 200 in 170.4677 ms
+2026-04-09 22:44:30.753 +08:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.0770 ms
+2026-04-09 22:44:30.814 +08:00 [INF] 操作日志记录: Login User c2bcf90d-454d-4c47-a6c4-bbaf97ffdc15
+2026-04-09 22:44:30.815 +08:00 [INF] 用户登录成功: cold
+2026-04-09 22:44:30.816 +08:00 [INF] HTTP POST /api/auth/login responded 200 in 59.7688 ms
+2026-04-09 22:44:30.852 +08:00 [INF] HTTP OPTIONS /api/admin/dashboard/stats responded 204 in 0.0930 ms
+2026-04-09 22:44:30.859 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 1.0899 ms
+2026-04-09 22:44:31.939 +08:00 [INF] HTTP OPTIONS /api/admin/devices responded 204 in 0.1590 ms
+2026-04-09 22:44:31.946 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.1605 ms
+2026-04-09 22:44:33.114 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.8402 ms
+2026-04-09 22:44:33.121 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.2459 ms
+2026-04-09 22:44:33.148 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 26.6346 ms
+2026-04-09 22:44:33.158 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 6.1557 ms
+2026-04-09 22:44:33.163 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 4.5395 ms
+2026-04-09 22:44:34.368 +08:00 [INF] HTTP OPTIONS /api/admin/permissions/me responded 204 in 0.1030 ms
+2026-04-09 22:44:34.379 +08:00 [INF] 操作日志记录: ReadPermissions User c2bcf90d-454d-4c47-a6c4-bbaf97ffdc15
+2026-04-09 22:44:34.381 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 7.2325 ms
+2026-04-09 22:44:35.135 +08:00 [INF] HTTP OPTIONS /api/admin/operation-logs responded 204 in 0.0911 ms
+2026-04-09 22:44:35.144 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 200 in 3.9770 ms
+2026-04-09 22:44:35.754 +08:00 [INF] 操作日志记录: ReadPermissions User c2bcf90d-454d-4c47-a6c4-bbaf97ffdc15
+2026-04-09 22:44:35.756 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 9.4367 ms
+2026-04-09 22:44:36.254 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 200 in 5.2347 ms
+2026-04-09 22:44:37.331 +08:00 [INF] 操作日志记录: ReadPermissions User c2bcf90d-454d-4c47-a6c4-bbaf97ffdc15
+2026-04-09 22:44:37.335 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 15.5344 ms
+2026-04-09 22:44:47.925 +08:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.0766 ms
+2026-04-09 22:44:47.979 +08:00 [INF] HTTP POST /api/auth/login responded 401 in 50.2811 ms
+2026-04-09 22:44:56.116 +08:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.0846 ms
+2026-04-09 22:44:56.180 +08:00 [INF] 操作日志记录: Login User 041b2069-58b5-4df4-85f0-4063af88fc20
+2026-04-09 22:44:56.182 +08:00 [INF] 用户登录成功: dream
+2026-04-09 22:44:56.183 +08:00 [INF] HTTP POST /api/auth/login responded 200 in 63.2488 ms
+2026-04-09 22:44:56.219 +08:00 [INF] HTTP OPTIONS /api/admin/dashboard/stats responded 204 in 0.1253 ms
+2026-04-09 22:44:56.227 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 0.8613 ms
+2026-04-09 22:44:57.486 +08:00 [INF] HTTP OPTIONS /api/admin/devices responded 204 in 0.0980 ms
+2026-04-09 22:44:57.493 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.1325 ms
+2026-04-09 22:44:57.971 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.8090 ms
+2026-04-09 22:44:57.978 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.2044 ms
+2026-04-09 22:44:58.001 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 22.8356 ms
+2026-04-09 22:44:58.010 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 5.2393 ms
+2026-04-09 22:44:58.014 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 3.2832 ms
+2026-04-09 22:44:58.567 +08:00 [INF] HTTP OPTIONS /api/admin/permissions/me responded 204 in 0.1126 ms
+2026-04-09 22:44:58.578 +08:00 [INF] 操作日志记录: ReadPermissions User 041b2069-58b5-4df4-85f0-4063af88fc20
+2026-04-09 22:44:58.580 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 7.4140 ms
+2026-04-09 22:44:59.055 +08:00 [INF] HTTP OPTIONS /api/admin/operation-logs responded 204 in 0.0989 ms
+2026-04-09 22:44:59.064 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 403 in 4.3974 ms
+2026-04-09 22:45:00.587 +08:00 [INF] 操作日志记录: ReadPermissions User 041b2069-58b5-4df4-85f0-4063af88fc20
+2026-04-09 22:45:00.589 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 8.8940 ms
+2026-04-09 22:45:00.869 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 403 in 0.6200 ms
+2026-04-09 22:45:01.694 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 403 in 0.3258 ms
+2026-04-09 22:45:02.278 +08:00 [INF] 操作日志记录: ReadPermissions User 041b2069-58b5-4df4-85f0-4063af88fc20
+2026-04-09 22:45:02.279 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 7.8304 ms
+2026-04-09 22:45:02.757 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 403 in 0.5803 ms
+2026-04-09 22:45:06.573 +08:00 [INF] HTTP OPTIONS /api/admin/permissions/me responded 204 in 0.0917 ms
+2026-04-09 22:45:06.584 +08:00 [INF] 操作日志记录: ReadPermissions User 041b2069-58b5-4df4-85f0-4063af88fc20
+2026-04-09 22:45:06.585 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 6.9221 ms
+2026-04-09 22:45:09.043 +08:00 [INF] HTTP OPTIONS /api/admin/devices responded 204 in 0.0931 ms
+2026-04-09 22:45:09.049 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.6158 ms
+2026-04-09 22:45:09.055 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.0851 ms
+2026-04-09 22:45:09.055 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.0852 ms
+2026-04-09 22:45:09.064 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 3.5922 ms
+2026-04-09 22:45:09.069 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 4.6599 ms
+2026-04-09 22:45:09.783 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.2135 ms
+2026-04-09 22:45:10.280 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 2.0194 ms
+2026-04-09 22:45:10.290 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 3.9141 ms
+2026-04-09 22:45:10.295 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 4.0623 ms
+2026-04-09 22:45:11.219 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints/e975ea7c-a69e-497f-a2e7-a8f7c0144d07 responded 204 in 0.0767 ms
+2026-04-09 22:45:11.223 +08:00 [INF] HTTP DELETE /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints/e975ea7c-a69e-497f-a2e7-a8f7c0144d07 responded 403 in 0.3218 ms
+2026-04-09 22:45:12.720 +08:00 [INF] HTTP OPTIONS /api/admin/operation-logs responded 204 in 0.1393 ms
+2026-04-09 22:45:12.726 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 403 in 0.5720 ms
+2026-04-09 22:45:13.462 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 403 in 0.3447 ms
+2026-04-09 22:45:14.008 +08:00 [INF] HTTP OPTIONS /api/admin/dashboard/stats responded 204 in 0.0984 ms
+2026-04-09 22:45:14.014 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 1.0369 ms
+2026-04-09 22:45:14.454 +08:00 [INF] HTTP OPTIONS /api/admin/devices responded 204 in 0.0904 ms
+2026-04-09 22:45:14.460 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.0969 ms
+2026-04-09 22:45:14.895 +08:00 [INF] HTTP GET /api/admin/devices responded 200 in 1.3149 ms
+2026-04-09 22:45:14.911 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.0935 ms
+2026-04-09 22:45:14.911 +08:00 [INF] HTTP OPTIONS /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 204 in 0.0938 ms
+2026-04-09 22:45:14.923 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 5.1724 ms
+2026-04-09 22:45:14.928 +08:00 [INF] HTTP GET /api/admin/devices/d8b4a1a4-a1f3-4e5f-b825-7411cd46a063/datapoints responded 200 in 4.5126 ms
+2026-04-09 22:45:15.291 +08:00 [INF] HTTP OPTIONS /api/admin/permissions/me responded 204 in 0.1135 ms
+2026-04-09 22:45:15.302 +08:00 [INF] 操作日志记录: ReadPermissions User 041b2069-58b5-4df4-85f0-4063af88fc20
+2026-04-09 22:45:15.303 +08:00 [INF] HTTP GET /api/admin/permissions/me responded 200 in 7.3810 ms
+2026-04-09 22:45:15.665 +08:00 [INF] HTTP GET /api/admin/operation-logs responded 403 in 0.4694 ms
+2026-04-09 22:45:16.493 +08:00 [INF] HTTP GET /api/admin/dashboard/stats responded 200 in 1.2363 ms
