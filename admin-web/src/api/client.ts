@@ -1,6 +1,6 @@
-import type { AuthResponse, DashboardStats, DataPoint, Device, OperationLog, PermissionSummary } from '../types'
+import type { AuthResponse, DashboardStats, DataPoint, Device, OperationLog, PermissionSummary, ProtocolType } from '../types'
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:5288'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'https://localhost:7143'
 const TOKEN_KEY = 'device_admin_token'
 const USER_KEY = 'device_admin_user'
 const ROLE_KEY = 'device_admin_roles'
@@ -88,14 +88,14 @@ export async function getDevices() {
   return request<Device[]>('/api/admin/devices')
 }
 
-export async function createDevice(payload: { name: string; type: string; status: string }) {
+export async function createDevice(payload: { name: string; type: string; protocolType: ProtocolType; status: string; connectionString: string }) {
   return request<Device>('/api/admin/devices', {
     method: 'POST',
     body: JSON.stringify(payload)
   })
 }
 
-export async function updateDevice(id: string, payload: { name: string; type: string; status: string }) {
+export async function updateDevice(id: string, payload: { name: string; type: string; protocolType: ProtocolType; status: string; connectionString: string }) {
   return request<Device>(`/api/admin/devices/${id}`, {
     method: 'PUT',
     body: JSON.stringify(payload)
@@ -112,7 +112,7 @@ export async function getDataPoints(deviceId: string) {
 
 export async function createDataPoint(
   deviceId: string,
-  payload: { key: string; name: string; dataType: string; value: string }
+  payload: { address: string; name: string; dataType: string }
 ) {
   return request<DataPoint>(`/api/admin/devices/${deviceId}/datapoints`, {
     method: 'POST',
@@ -123,7 +123,7 @@ export async function createDataPoint(
 export async function updateDataPoint(
   deviceId: string,
   pointId: string,
-  payload: { key: string; name: string; dataType: string; value: string }
+  payload: { address: string; name: string; dataType: string }
 ) {
   return request<DataPoint>(`/api/admin/devices/${deviceId}/datapoints/${pointId}`, {
     method: 'PUT',
@@ -134,13 +134,6 @@ export async function updateDataPoint(
 export async function deleteDataPoint(deviceId: string, pointId: string) {
   return request<void>(`/api/admin/devices/${deviceId}/datapoints/${pointId}`, {
     method: 'DELETE'
-  })
-}
-
-export async function writeDataPointValue(deviceId: string, pointId: string, value: string) {
-  return request<DataPoint>(`/api/admin/devices/${deviceId}/datapoints/${pointId}/value`, {
-    method: 'PUT',
-    body: JSON.stringify({ value })
   })
 }
 

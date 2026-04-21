@@ -1,12 +1,13 @@
 export type DeviceType = 'Sensor' | 'Plc'
+export type ProtocolType = 'S7' | 'ModbusTcp'
 
 export interface DataPoint {
   id: string
   deviceId: string
-  key: string
+  address: string
   name: string
   dataType: string
-  value: string
+  alarmThreshold?: number
   updatedAtUtc: string
 }
 
@@ -14,7 +15,9 @@ export interface Device {
   id: string
   name: string
   type: DeviceType
+  protocolType: ProtocolType
   status: string
+  connectionString: string
   createdAtUtc: string
   updatedAtUtc: string
   dataPoints: DataPoint[]

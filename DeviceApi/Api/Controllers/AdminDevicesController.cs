@@ -90,12 +90,4 @@ public class AdminDevicesController(IDeviceService deviceService) : ControllerBa
         var deleted = await deviceService.DeleteDataPointAsync(deviceId, pointId, cancellationToken);
         return deleted ? NoContent() : NotFound();
     }
-
-    [HttpPut("{deviceId:guid}/datapoints/{pointId:guid}/value")]
-    [Authorize(Policy = AppPolicies.DeviceWrite)]
-    public async Task<IActionResult> WriteValue(Guid deviceId, Guid pointId, [FromBody] UpdateDataPointValueRequest request, CancellationToken cancellationToken)
-    {
-        var point = await deviceService.UpdateDataPointValueAsync(deviceId, pointId, request.Value, cancellationToken);
-        return point is null ? NotFound() : Ok(point);
-    }
 }

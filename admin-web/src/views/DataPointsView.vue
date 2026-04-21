@@ -5,8 +5,7 @@ import {
   deleteDataPoint,
   getDataPoints,
   getDevices,
-  updateDataPoint,
-  writeDataPointValue
+  updateDataPoint
 } from '../api/client'
 import type { DataPoint, Device } from '../types'
 
@@ -18,26 +17,26 @@ const message = ref('')
 
 const form = reactive({
   id: '',
-  key: '',
+  address: '',
   name: '',
   dataType: 'double',
-  value: ''
+  alarmThreshold: null as number | null
 })
 
 function resetForm() {
   form.id = ''
-  form.key = ''
+  form.address = ''
   form.name = ''
   form.dataType = 'double'
-  form.value = ''
+  form.alarmThreshold = null
 }
 
 function editPoint(point: DataPoint) {
   form.id = point.id
-  form.key = point.key
+  form.address = point.address
   form.name = point.name
   form.dataType = point.dataType
-  form.value = point.value
+  form.alarmThreshold = point.alarmThreshold ?? null
 }
 
 async function loadDevices() {
@@ -69,21 +68,17 @@ async function submitForm() {
   }
 
   try {
+    const payload = {
+      address: form.address,
+      name: form.name,
+      dataType: form.dataType,
+      alarmThreshold: form.alarmThreshold
+    }
     if (form.id) {
-      await updateDataPoint(selectedDeviceId.value, form.id, {
-        key: form.key,
-        name: form.name,
-        dataType: form.dataType,
-        value: form.value
-      })
+      await updateDataPoint(selectedDeviceId.value, form.id, payload)
       message.value = '数据点更新成功'
     } else {
-      await createDataPoint(selectedDeviceId.value, {
-        key: form.key,
-        name: form.name,
-        dataType: form.dataType,
-        value: form.value
-      })
+      await createDataPoint(selectedDeviceId.value, payload)
       message.value = '数据点创建成功'
     }
     resetForm()
@@ -101,20 +96,6 @@ async function onDelete(pointId: string) {
   try {
     await deleteDataPoint(selectedDeviceId.value, pointId)
     message.value = '数据点删除成功'
-    await loadDataPoints()
-  } catch (error) {
-    message.value = (error as Error).message
-  }
-}
-
-async function onWrite(point: DataPoint) {
-  if (!selectedDeviceId.value) {
-    return
-  }
-
-  try {
-    await writeDataPointValue(selectedDeviceId.value, point.id, point.value)
-    message.value = '值写入成功'
     await loadDataPoints()
   } catch (error) {
     message.value = (error as Error).message
@@ -139,21 +120,21 @@ onMounted(async () => {
 <template>
   <div>
     <h1>数据点管理</h1>
-    <p class="subtitle">维护设备数据点并通过后台写入值</p>
+    <p class="subtitle">仅维护点位定义，实时值由 OPC Server 采集</p>
     <p v-if="message" :class="['message', message.includes('成功') ? 'success' : 'error']">{{ message }}</p>
     <section class="panel">
       <label class="device-selector">
         选择设备
         <select v-model="selectedDeviceId">
           <option v-for="device in devices" :key="device.id" :value="device.id">
-            {{ device.name }} ({{ device.type }})
+            {{ device.name }} ({{ device.type }} / {{ device.protocolType }})
           </option>
         </select>
       </label>
       <form class="form-grid" @submit.prevent="submitForm">
         <label>
-          点位Key
-          <input v-model="form.key" required />
+          点位地址
+          <input v-model="form.address" required />
         </label>
         <label>
           点位名称
@@ -164,8 +145,8 @@ onMounted(async () => {
           <input v-model="form.dataType" required />
         </label>
         <label>
-          当前值
-          <input v-model="form.value" required />
+          报警阈值
+          <input v-model="form.alarmThreshold" type="number" step="any" placeholder="留空不监控限值" />
         </label>
         <div class="form-buttons">
           <button type="submit">{{ form.id ? '更新数据点' : '新增数据点' }}</button>
@@ -180,9 +161,9 @@ onMounted(async () => {
         <thead>
           <tr>
             <th>名称</th>
-            <th>Key</th>
+            <th>地址</th>
             <th>类型</th>
-            <th>值</th>
+            <th>超限阈值</th>
             <th>更新时间</th>
             <th>操作</th>
           </tr>
@@ -190,15 +171,12 @@ onMounted(async () => {
         <tbody>
           <tr v-for="point in points" :key="point.id">
             <td>{{ point.name }}</td>
-            <td>{{ point.key }}</td>
+            <td>{{ point.address }}</td>
             <td>{{ point.dataType }}</td>
-            <td>
-              <input v-model="point.value" />
-            </td>
+            <td>{{ point.alarmThreshold !== null && point.alarmThreshold !== undefined ? point.alarmThreshold : '-' }}</td>
             <td>{{ new Date(point.updatedAtUtc).toLocaleString() }}</td>
             <td class="actions">
               <button class="secondary" @click="editPoint(point)">编辑</button>
-              <button @click="onWrite(point)">写入</button>
               <button class="danger" @click="onDelete(point.id)">删除</button>
             </td>
           </tr>

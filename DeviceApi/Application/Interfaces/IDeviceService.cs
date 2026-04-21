@@ -24,7 +24,7 @@ public interface IDeviceService
 
     Task<bool> DeleteDataPointAsync(Guid deviceId, Guid pointId, CancellationToken cancellationToken);
 
-    Task<DataPointDto?> UpdateDataPointValueAsync(Guid deviceId, Guid pointId, string value, CancellationToken cancellationToken);
-
     Task<DashboardStatsResponse> GetDashboardStatsAsync(CancellationToken cancellationToken);
+
+    Task ReportOpcStatusAsync(OpcServerStatusReport report, CancellationToken cancellationToken);
 }

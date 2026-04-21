@@ -170,3 +170,4 @@ D:\Cshrap\Industrial-LinkPro\DeviceWebApp\DeviceApi\bin\Debug\net10.0\ru\Microso
 D:\Cshrap\Industrial-LinkPro\DeviceWebApp\DeviceApi\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\Cshrap\Industrial-LinkPro\DeviceWebApp\DeviceApi\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\Cshrap\Industrial-LinkPro\DeviceWebApp\DeviceApi\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Cshrap\Industrial-LinkPro\DeviceWebApp\DeviceApi\obj\Debug\net10.0\DeviceApi.sourcelink.json
